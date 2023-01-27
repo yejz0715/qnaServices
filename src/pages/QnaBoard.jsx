@@ -71,9 +71,9 @@ const QnaBoard = () => {
 
       <S.BoardContainer>
         <S.HeaderTitle>답변</S.HeaderTitle>
-
         {/* <BoardInput label="id" /> */}
-        <input type="text" value={boardId} readOnly />
+        <S.labelText>질문 id</S.labelText>
+        <S.BoardInput type="text" value={boardId} readOnly />
         <BoardInput
           label="답변할 내용"
           onChange={handleAnswer}
